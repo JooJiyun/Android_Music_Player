@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/btn_pick_item_playing"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_baseline_play_arrow_24"
+        style="@style/Widget.AppCompat.Button.Borderless"/>
+
+    <TextView
+        android:id="@+id/txt_show_item_title"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:fontFamily="@font/courgette_regular"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="title"/>
+    <Button
+        android:id="@+id/btn_show_item_detail"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:drawableRight="@drawable/ic_baseline_menu_24"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:backgroundTint="@color/white"/>
+    <Button
+        android:id="@+id/btn_show_item_delete"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:drawableRight="@drawable/ic_baseline_delete_24"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:backgroundTint="@color/white"/>
+
+</LinearLayout>
